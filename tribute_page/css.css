@@ -1,0 +1,99 @@
+* {font-family: 'GeoBrandBold';} 
+
+.container {
+  background: white;
+  min-height: 300px;
+  width: 100%;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px auto 1fr auto;
+  grid-template-areas:
+     "titulo"
+     "imagen"
+     "informacion"
+     "linkwiki"
+  
+}
+h1 {
+  font-style: normal;
+  font-weight: bold;
+  color: black;
+  font-size: 50px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  grid-area: titulo;
+  margin: 100px 0px 0px 0px;
+}
+
+#image {
+  margin: 60px auto 50px 60px;
+  width: 230px;
+  height: 365px;;
+  display: block;
+}
+
+#img-div {
+  grid-area: imagen;
+}
+.responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+#img-caption {
+  text-align: center;
+  margin-top: -45px;
+  font-size: small;
+}
+
+.caption1 {
+  margin-left: 50px;
+}
+
+.caption2 {
+  margin-left: 55px;
+}
+
+.caption3 {
+  margin-left: 55px;
+}
+
+#tribute-info {
+  text-align: justify;
+  margin-left: 200px;
+  margin-right: 200px;
+  grid-area: informacion;
+  line-height: 2em;
+}
+
+.parrafo1 {
+  margin-top: 180px;
+}
+
+.parrafo2 {
+  margin-top: 80px;
+}
+
+.parrafo3 {
+  margin-top: 80px;
+}
+
+#tribute-link {
+  text-align: center;
+  font-size: medium;  
+  padding: 20px 0px 20px 0px;
+  grid-are: linkwiki;
+  
+}
+
+  @media (min-width: 300px){
+    .container{
+      grid-template-areas:
+        "imagen titulo"
+        "imagen informacion"
+        "imagen informacion"
+        "imagen informacion"    
+    }
+  }

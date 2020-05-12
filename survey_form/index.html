@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "css.css">
+    <title>Form</title>
+</head>
+<body>
+<div class="gradient-border" id="box">
+    <form id="survey-form" action="/cl/xhr/json/sign-up-for-spotify.php" method="POST">
+        <h1 id="title">Formulario de Registro</h1>
+        <br>
+        <label id="name-label">Nombre</label>
+        <br>
+        <input type="text" id="name" name="name" value="">
+        <br>
+        <br>
+        <label id="email-label">Email</label>
+        <br>
+        <input type="email" id="email" name="email" value="" required>
+        <br>
+        <br>
+        <label>Password</label>
+        <br>
+        <input type="password" id="password" name="pasword"> 
+        <br>
+        <br>
+        <label for="dropdown">Sexo</label>
+        <br>
+        <select id="dropdown" name="fsexo">
+            <option value="femenino">Femenino</option>
+            <option value="masculino">Masculino</option>
+            <option value="otro">Otro</option>
+        </select>
+        <br>
+        <br>
+        <label>Fecha de nacimiento</label>
+        <br>
+        <input type="date" id="ffecha" name="fname">
+        <br>
+        <br>
+        <label id="number-label">Número</label>
+        <br>
+        <input type="number" id="number" name="number" min="10" max="100" required>
+        <br>
+        <br>
+        <label for="comments">Comentarios</label>
+        <br>
+        <textarea id="comments" rows="3" cols="40">
+        </textarea>
+        <br>
+        <br>
+        <input id="button" type="submit" value="Regístrate">
+    </form>
+</div>
+</body>
+</html>
