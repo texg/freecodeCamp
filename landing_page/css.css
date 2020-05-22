@@ -1,3 +1,4 @@
+/*      Comienzo del header      */
 #header {
   font-family: 'Libre Baskerville', serif;
   background: bisque;
@@ -7,9 +8,8 @@
 }
 
 h1 {
-  padding: 50px 0px 0px 0px;
+  padding-top: 50px;
   font-size: 60px;
-  margin: 0px 0px 0px 0px;
 }
 
 .topnav {
@@ -25,14 +25,14 @@ h1 {
   float: left;
   color: black;
   text-align: center;
-  margin-left: 170px;
+  margin-left: 130px;
   margin-top: 8px;
   padding: 20px 50px 20px 50px;
   text-decoration: none;
   font-size: 17px;
   border-radius: 5px;
 }
-
+/*      Fin del header      */
 #home {
   background: whitesmoke;
   margin: 30px 20px;
@@ -43,7 +43,7 @@ h1 {
   background: mistyrose;
   width: 1385px;
   height: 350px;
-  margin-left: 20px;
+  margin: 30px 20px;
   padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
@@ -62,18 +62,7 @@ h1 {
   padding-bottom: 30px;
 }
 
-
-#boximg1 {
-  width: 350px;
-  height: 350px;
-}
-
-#boximg2 {
-  width: 350px;
-  height: 350px;
-}
-
-#boximg3 {
+.boximg {
   width: 350px;
   height: 350px;
 }
@@ -159,14 +148,14 @@ h1 {
 
 .form {
   padding: 5px 100px 5px 0px;
-  border-radius:10px;
+  border-radius: 10px;
   border: 0;
   margin-top: 5px;
 }
 
 form textarea {
   padding: 5px 35px 5px 0px;
-  border-radius:10px;
+  border-radius: 10px;
   border: 0;
   margin-bottom: -10px;
   margin-top: 5px;
@@ -180,32 +169,36 @@ form textarea {
   
   
 }
+
+/*      Comienzo dirección y síguenos     */
 #about {
-  background: 	bisque;
+  background: bisque;
   height: 250px;
   margin: 30px 20px;
+  display: flex;    
 }
 
 #direccion {
-  margin-left: 60px;
-  padding-right: 800px;
-  padding-top: 30px;
+  width: 600px;
   font-size: 20px; 
-}
-
-#direccion div{
-  padding-top: 20px;
-}
-
-#social {
-  text-align: right; 
+  text-align: justify;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 #siguenos {
-  margin-right: 170px;
-  margin-top: -170px;
-  font-size: 20px; 
-  text-align: right;
+  width: 500px;
+  display: inline;
+}
+
+#siguenos h2{
+  margin-top: 50px;
+  text-align: center;
+}
+
+#siguenos ul{
+  text-align: center;
+  padding-left: 90px;
 }
 
 .fa {
@@ -214,7 +207,7 @@ form textarea {
   width: 15px;
   text-align: center;
   text-decoration: none;
-  margin: 20px 20px;
+  margin: 0px 0px 0px 9px ;
   border-radius: 50%;
 }
 
@@ -243,4 +236,11 @@ form textarea {
   color: white;
   margin-right: 90px;
 }
+/*      Fin dirección y síguenos     */
+
+/*      Inicio de media queries      */
+@media (max-width: 800px) {
+  
+}
+
 
